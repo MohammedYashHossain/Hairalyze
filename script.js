@@ -1,3 +1,4 @@
+// FAQ expand/collapse
 document.querySelectorAll('.faq-question').forEach(item => {
   item.addEventListener('click', () => {
     item.classList.toggle('active');
@@ -10,6 +11,7 @@ document.querySelectorAll('.faq-question').forEach(item => {
   });
 });
 
+// FAQ fade-in on scroll
 const faqSection = document.querySelector('.faq');
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
@@ -24,12 +26,9 @@ faqSection.style.opacity = '0';
 faqSection.style.transform = 'translateY(40px)';
 observer.observe(faqSection);
 
+// Testimonial rotation
 const testimonialSection = document.querySelector('.testimonials');
-const testimonials = [
-  testimonialSection.querySelectorAll('.testimonial-container')[0],
-  testimonialSection.querySelectorAll('.testimonial-container')[1],
-  testimonialSection.querySelectorAll('.testimonial-container')[2]
-];
+const testimonials = testimonialSection.querySelectorAll('.testimonial-container');
 let currentTestimonial = 0;
 
 function showTestimonial(index) {

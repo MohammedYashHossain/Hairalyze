@@ -79,7 +79,7 @@ h1 {
   -webkit-text-fill-color: transparent;
   animation: fadeInUp 1s ease-out;
   font-family: 'Shrikhand', cursive;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
 }
 
 .subtitle {
@@ -191,7 +191,7 @@ h1 {
   margin-bottom: 3rem;
   text-align: center;
   font-family: 'Shrikhand', cursive;
-  letter-spacing: 0.5px;
+  letter-spacing: 1.5px;
 }
 
 .faq-item {
@@ -359,7 +359,7 @@ footer {
   font-size: clamp(1.8rem, 3vw, 2.5rem);
   margin-bottom: 3rem;
   font-family: 'Shrikhand', cursive;
-  letter-spacing: 0.5px;
+  letter-spacing: 1.5px;
 }
 
 .features-grid {
@@ -399,7 +399,7 @@ footer {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: 'Shrikhand', cursive;
-  letter-spacing: 0.5px;
+  letter-spacing: 1px;
 }
 
 .feature-card p {

@@ -121,41 +121,51 @@ h1 {
 }
 
 .testimonial-container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
 }
 
 .testimonial {
   background: rgba(255, 255, 255, 0.05);
-  padding: 2rem;
+  padding: 2.5rem;
   border-radius: 1rem;
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.1);
-  transition: transform 0.3s ease;
+  transition: all 0.3s ease;
+  margin: 1rem 0;
+  line-height: 1.8;
 }
 
 .testimonial:hover {
   transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.08);
 }
 
 .testimonial-text {
   font-size: 1.1rem;
-  line-height: 1.6;
-  margin-bottom: 1.5rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
   color: #fff;
+  letter-spacing: 0.3px;
 }
 
 .testimonial-author {
   display: flex;
   align-items: center;
   gap: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .testimonial-author h4 {
   font-size: 1.1rem;
   color: #fff;
   margin: 0;
+  font-weight: 600;
 }
 
 .testimonial-author p {

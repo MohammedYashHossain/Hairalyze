@@ -23,15 +23,27 @@ const observerOptions = {
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
-      entry.target.style.opacity = '1';
-      entry.target.style.transform = 'translateY(0)';
+      entry.target.classList.add('visible');
+      if (entry.target.dataset.delay) {
+        entry.target.style.transitionDelay = entry.target.dataset.delay + 's';
+      }
     }
   });
 }, observerOptions);
 
-document.querySelectorAll('section').forEach(section => {
-  section.style.opacity = '0';
-  section.style.transform = 'translateY(20px)';
-  section.style.transition = 'all 0.6s ease-out';
-  observer.observe(section);
+document.querySelectorAll('[data-motion]').forEach(element => {
+  observer.observe(element);
+});
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute('href'));
+    if (target) {
+      target.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  });
 }); 

@@ -7,6 +7,8 @@
   <link rel="icon" type="image/png" href="Hairalyze Logo.png" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <script src="https://unpkg.com/framer-motion@10.16.4/dist/framer-motion.js"></script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </head>
 <body>
   <header>
@@ -22,14 +24,40 @@
           Download on the App Store
         </a>
       </div>
+      <div class="app-preview">
+        <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_xyadoh9h.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
+      </div>
     </div>
   </header>
+
+  <section class="features">
+    <div class="container">
+      <h2>Key Features</h2>
+      <div class="features-grid">
+        <div class="feature-card" data-motion="fade-up">
+          <div class="feature-icon">📸</div>
+          <h3>AI Analysis</h3>
+          <p>Get instant feedback on your hair's condition with our advanced AI technology</p>
+        </div>
+        <div class="feature-card" data-motion="fade-up" data-delay="0.2">
+          <div class="feature-icon">📊</div>
+          <h3>Track Progress</h3>
+          <p>Monitor your hair health improvements over time with detailed analytics</p>
+        </div>
+        <div class="feature-card" data-motion="fade-up" data-delay="0.4">
+          <div class="feature-icon">💬</div>
+          <h3>AI Stylist</h3>
+          <p>Chat with Curlina, your personal AI hair care assistant</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <section class="testimonials">
     <div class="container">
       <h2>What People Are Saying</h2>
       <div class="testimonial-container">
-        <div class="testimonial">
+        <div class="testimonial" data-motion="fade-up">
           <p>"Hairalyze changed my entire routine. I finally understand what my hair needs and I'm seeing results!"</p>
           <div class="testimonial-author">
             <img src="https://via.placeholder.com/50" alt="User 1" />
@@ -39,7 +67,7 @@
             </div>
           </div>
         </div>
-        <div class="testimonial">
+        <div class="testimonial" data-motion="fade-up" data-delay="0.2">
           <p>"Curlina is like my personal hair coach. I never thought I'd rely on AI this much for beauty advice."</p>
           <div class="testimonial-author">
             <img src="https://via.placeholder.com/50" alt="User 2" />
@@ -49,7 +77,7 @@
             </div>
           </div>
         </div>
-        <div class="testimonial">
+        <div class="testimonial" data-motion="fade-up" data-delay="0.4">
           <p>"Tracking my hair health like fitness progress? Genius. Love how simple yet powerful the app is."</p>
           <div class="testimonial-author">
             <img src="https://via.placeholder.com/50" alt="User 3" />
@@ -66,15 +94,15 @@
   <section class="faq">
     <div class="container">
       <h2>Frequently Asked Questions</h2>
-      <div class="faq-item">
+      <div class="faq-item" data-motion="fade-up">
         <div class="faq-question">What is Hairalyze?</div>
         <div class="faq-answer">Hairalyze is an AI-powered tool that scans your hair from a photo and gives you real feedback—like how frizzy, oily, dry, or damaged it is. It helps you understand your hair's condition and suggests how to care for it more effectively.</div>
       </div>
-      <div class="faq-item">
+      <div class="faq-item" data-motion="fade-up" data-delay="0.2">
         <div class="faq-question">Is Hairalyze free to use?</div>
         <div class="faq-answer">Hairalyze offers a free version with essential features, and will introduce premium options with enhanced insights as development continues.</div>
       </div>
-      <div class="faq-item">
+      <div class="faq-item" data-motion="fade-up" data-delay="0.4">
         <div class="faq-question">What do I need to get started?</div>
         <div class="faq-answer">Just take a photo of your hair, and Hairalyze will analyze it instantly. You'll receive personalized ratings, see trends over time, and even chat with your AI stylist, Curlina, for tailored advice.</div>
       </div>

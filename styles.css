@@ -56,10 +56,13 @@ header > * {
 
 .logo {
   width: 120px;
-  height: auto;
+  height: 120px;
   margin-bottom: 2rem;
   animation: float 6s ease-in-out infinite;
-  object-fit: contain;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 @keyframes float {

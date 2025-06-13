@@ -3,276 +3,101 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hairalyze</title>
+  <title>Hairalyze - AI-Powered Hair Care Analysis</title>
   <link rel="icon" type="image/png" href="Hairalyze Logo.png" />
-  <style>
-    .faq {
-      animation: fadeSlideIn 2s ease-out;
-    }
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(to bottom right, #8a2be2, #6dd5fa);
-      color: white;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      text-align: center;
-    }
-
-    header {
-      margin-bottom: 40px;
-      animation: fadeSlideIn 1.5s ease-out;
-    }
-
-    @keyframes fadeSlideIn {
-      0% {
-        opacity: 0;
-        transform: translateY(40px);
-      }
-      100% {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    header img {
-      height: 100px;
-      margin-bottom: 20px;
-    }
-
-    h1 {
-      font-size: 3rem;
-      margin: 0;
-    }
-
-    p {
-      font-size: 1.2rem;
-      max-width: 600px;
-      margin: 20px auto;
-    }
-
-    .download-section {
-      display: flex;
-      gap: 15px;
-      margin-top: 30px;
-      justify-content: center;
-      flex-wrap: wrap;
-      animation: fadeSlideIn 2s ease-out;
-    }
-
-    .app-store-btn {
-      background-color: white;
-      color: #6a1b9a;
-      padding: 14px 28px;
-      border-radius: 12px;
-      font-size: 1rem;
-      font-weight: bold;
-      text-decoration: none;
-      display: inline-block;
-      transition: transform 0.3s ease, background 0.3s ease;
-    }
-
-    .app-store-btn:hover {
-      transform: translateY(-3px);
-      background-color: #f0f0f0;
-    }
-
-    .faq {
-      max-width: 700px;
-      width: 90%;
-      text-align: left;
-      margin: 40px auto;
-    }
-
-    .faq h2 {
-      font-size: 2rem;
-      margin-bottom: 20px;
-    }
-
-    .faq-item {
-      margin-bottom: 30px;
-    }
-
-    .faq-question {
-      font-weight: bold;
-      cursor: pointer;
-      font-size: 1.3rem;
-      position: relative;
-      padding-bottom: 6px;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-      transition: color 0.3s ease;
-    }
-
-    .faq-question:hover {
-      color: #ffd700;
-    }
-
-    .faq-answer {
-      max-height: 0;
-      overflow: hidden;
-      opacity: 0;
-      transition: max-height 0.5s ease, opacity 0.5s ease;
-      font-size: 1.1rem;
-      margin-top: 10px;
-      line-height: 1.5;
-    }
-
-    .faq-question.active + .faq-answer {
-      max-height: 500px;
-      opacity: 1;
-    }
-
-    footer {
-      border-top: 1px solid rgba(255, 255, 255, 0.2);
-      margin-top: 60px;
-      font-size: 0.9rem;
-      color: rgba(255, 255, 255, 0.7);
-    }
-
-    .testimonial-container {
-      transition: opacity 1s ease, transform 1s ease;
-      opacity: 0;
-      transform: translateX(-30px);
-      position: absolute;
-    }
-
-    .testimonial-container.active {
-      opacity: 1;
-      transform: translateX(0);
-      position: relative;
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
-    <img src="Hairalyze Logo.png" alt="Hairalyze Logo" />
-    <h1>Hairalyze</h1>
-    <div class="download-section">
-      <a href="https://apps.apple.com/us/app/hairalyze-ai-hair-care/id6744613045" class="app-store-btn" target="_blank" style="background-color: transparent; color: white; border: 2px solid white; padding: 12px 24px; display: inline-flex; align-items: center; gap: 10px;">
-        
-        <span>Download on the App Store</span>
-      </a>
-      
+    <div class="container">
+      <img src="Hairalyze Logo.png" alt="Hairalyze Logo" class="logo" />
+      <h1>Hairalyze</h1>
+      <p class="subtitle">Transform your hair care routine with AI-powered analysis and personalized recommendations</p>
+      <div class="download-section">
+        <a href="https://apps.apple.com/us/app/hairalyze-ai-hair-care/id6744613045" class="app-store-btn" target="_blank">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.05 20.28c-.98.95-2.05.88-3.08.41-1.09-.47-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.41C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.78 1.18-.19 2.31-.89 3.51-.84 1.54.07 2.7.61 3.44 1.57-3.14 1.88-2.29 5.74.64 6.81-.75 1.95-1.67 3.89-3.57 5.65zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z" fill="currentColor"/>
+          </svg>
+          Download on the App Store
+        </a>
+      </div>
     </div>
   </header>
 
   <section class="testimonials">
-    <h2 style="font-size: 2rem; margin: 40px 0 20px;">What People Are Saying</h2>
-    <div class="testimonial-container">
-      <div class="testimonial" id="testimonial1" style="display: flex; align-items: center; gap: 10px; max-width: 600px; padding: 10px;">
-        <p style="font-size: 1.1rem; flex: 1; margin: 0;">"Hairalyze changed my entire routine. I finally understand what my hair needs and I’m seeing results!"</p>
-        <img src="https://via.placeholder.com/150" alt="User 1" style="border-radius: 12px; width: 150px; height: 150px;" />
-      </div>
-    </div>
-    <div class="testimonial-container" style="display: none;">
-      <div class="testimonial" id="testimonial2" style="display: flex; align-items: center; gap: 10px; max-width: 600px; padding: 10px;">
-        <p style="font-size: 1.1rem; flex: 1; margin: 0;">"Curlina is like my personal hair coach. I never thought I’d rely on AI this much for beauty advice."</p>
-        <img src="https://via.placeholder.com/150" alt="User 2" style="border-radius: 12px; width: 150px; height: 150px;" />
-      </div>
-    </div>
-    <div class="testimonial-container" style="display: none;">
-      <div class="testimonial" id="testimonial3" style="display: flex; align-items: center; gap: 10px; max-width: 600px; padding: 10px;">
-        <p style="font-size: 1.1rem; flex: 1; margin: 0;">"Tracking my hair health like fitness progress? Genius. Love how simple yet powerful the app is."</p>
-        <img src="https://via.placeholder.com/150" alt="User 3" style="border-radius: 12px; width: 150px; height: 150px;" />
+    <div class="container">
+      <h2>What People Are Saying</h2>
+      <div class="testimonial-container">
+        <div class="testimonial">
+          <p>"Hairalyze changed my entire routine. I finally understand what my hair needs and I'm seeing results!"</p>
+          <div class="testimonial-author">
+            <img src="https://via.placeholder.com/50" alt="User 1" />
+            <div>
+              <strong>Sarah M.</strong>
+              <div>Curly Hair Enthusiast</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial">
+          <p>"Curlina is like my personal hair coach. I never thought I'd rely on AI this much for beauty advice."</p>
+          <div class="testimonial-author">
+            <img src="https://via.placeholder.com/50" alt="User 2" />
+            <div>
+              <strong>Jessica K.</strong>
+              <div>Hair Care Expert</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial">
+          <p>"Tracking my hair health like fitness progress? Genius. Love how simple yet powerful the app is."</p>
+          <div class="testimonial-author">
+            <img src="https://via.placeholder.com/50" alt="User 3" />
+            <div>
+              <strong>Michael T.</strong>
+              <div>Tech Enthusiast</div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <section class="faq">
-    <h2>Frequently Asked Questions</h2>
-    <div class="faq-item">
-      <div class="faq-question">What is Hairalyze?</div>
-      <div class="faq-answer">Hairalyze is an AI-powered tool that scans your hair from a photo and gives you real feedback—like how frizzy, oily, dry, or damaged it is. It helps you understand your hair's condition and suggests how to care for it more effectively.</div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-question">Is Hairalyze free to use?</div>
-      <div class="faq-answer">Hairalyze offers a free version with essential features, and will introduce premium options with enhanced insights as development continues.</div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-question">What do I need to get started?</div>
-      <div class="faq-answer">Just take a photo of your hair, and Hairalyze will analyze it instantly. You'll receive personalized ratings, see trends over time, and even chat with your AI stylist, Curlina, for tailored advice.</div>
+    <div class="container">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-item">
+        <div class="faq-question">What is Hairalyze?</div>
+        <div class="faq-answer">Hairalyze is an AI-powered tool that scans your hair from a photo and gives you real feedback—like how frizzy, oily, dry, or damaged it is. It helps you understand your hair's condition and suggests how to care for it more effectively.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">Is Hairalyze free to use?</div>
+        <div class="faq-answer">Hairalyze offers a free version with essential features, and will introduce premium options with enhanced insights as development continues.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">What do I need to get started?</div>
+        <div class="faq-answer">Just take a photo of your hair, and Hairalyze will analyze it instantly. You'll receive personalized ratings, see trends over time, and even chat with your AI stylist, Curlina, for tailored advice.</div>
+      </div>
     </div>
   </section>
 
   <footer>
-    &copy; 2025 Hairalyze. All rights reserved.<br />
-    <span>Follow us on:
-      <a href="https://www.tiktok.com" target="_blank" style="color: white; text-decoration: none; margin: 0 10px;">
-        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/tiktok.svg" alt="tiktok" style="filter: brightness(0) invert(1); width: 16px; height: 16px; vertical-align: middle;" />
-      </a>
-      <a href="https://www.instagram.com" target="_blank" style="color: white; text-decoration: none; margin: 0 10px;">
-        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg" alt="instagram" style="filter: brightness(0) invert(1); width: 16px; height: 16px; vertical-align: middle;" />
-      </a>
-      <a href="https://www.linkedin.com/company/hairalyze/" target="_blank" style="color: white; text-decoration: none; margin: 0 10px;">
-        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" alt="LinkedIn" style="filter: brightness(0) invert(1); width: 16px; height: 16px; vertical-align: middle;" />
-      </a>
-    </span>
+    <div class="container">
+      <p>&copy; 2024 Hairalyze. All rights reserved.</p>
+      <div class="social-links">
+        <a href="https://www.tiktok.com" target="_blank" aria-label="TikTok">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/tiktok.svg" alt="TikTok" />
+        </a>
+        <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg" alt="Instagram" />
+        </a>
+        <a href="https://www.linkedin.com/company/hairalyze/" target="_blank" aria-label="LinkedIn">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" alt="LinkedIn" />
+        </a>
+      </div>
+    </div>
   </footer>
 
-  <script>
-    document.querySelectorAll('.faq-question').forEach(item => {
-      item.addEventListener('click', () => {
-        item.classList.toggle('active');
-        let answer = item.nextElementSibling;
-        if (item.classList.contains('active')) {
-          answer.style.maxHeight = answer.scrollHeight + "px";
-        } else {
-          answer.style.maxHeight = null;
-        }
-      });
-    });
-
-    const faqSection = document.querySelector('.faq');
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          faqSection.style.animation = 'fadeSlideIn 1.5s ease-out forwards';
-          observer.unobserve(faqSection);
-        }
-      });
-    }, { threshold: 0.3 });
-
-    faqSection.style.opacity = '0';
-    faqSection.style.transform = 'translateY(40px)';
-    observer.observe(faqSection);
-
-    const testimonialSection = document.querySelector('.testimonials');
-    const testimonials = [
-      testimonialSection.querySelectorAll('.testimonial-container')[0],
-      testimonialSection.querySelectorAll('.testimonial-container')[1],
-      testimonialSection.querySelectorAll('.testimonial-container')[2]
-    ];
-    let currentTestimonial = 0;
-
-    function showTestimonial(index) {
-      testimonials.forEach((testimonial, i) => {
-        testimonial.classList.remove('active');
-        testimonial.style.display = 'none';
-      });
-      testimonials[index].classList.add('active');
-      testimonials[index].style.display = 'flex';
-    }
-
-    function startRotation() {
-      testimonialInterval = setInterval(() => {
-        currentTestimonial = (currentTestimonial + 1) % testimonials.length;
-        showTestimonial(currentTestimonial);
-      }, 10000);
-    }
-
-    function stopRotation() {
-      clearInterval(testimonialInterval);
-    }
-
-    testimonialSection.addEventListener('mouseenter', stopRotation);
-    testimonialSection.addEventListener('mouseleave', startRotation);
-
-    showTestimonial(currentTestimonial);
-    startRotation();
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
